@@ -199,20 +199,21 @@ p {
 }
 
 
-/* .homeSection2Description {
+/* .homeSection2AboutMe {
   padding-bottom: 3em;
   border: 2px solid red;
   max-width: 750px;
   min-width: 400px;
   height: 515px;
 } */
-.homeSection2Description {
+.homeSection2AboutMe {
   padding-bottom: 3em;
   /* border: 2px solid red; */
   max-width: 750px;
   min-width: 400px;
   height: 515px;
   box-sizing: border-box;
+  order: -1;
 }
 
 .hs2Scroll {
@@ -224,7 +225,7 @@ p {
   padding: 3em 7em;
 }
 
-.homeSection2Description h1 {
+.homeSection2AboutMe h1 {
   display: inline-block;
   border-bottom: 2px solid #7f5af0;
   margin: 0 auto;
@@ -247,16 +248,16 @@ p {
 } */
 .slideshow {
   flex: 1;
-  min-width: 500px;
+  /* min-width: 500px; */
+  width: auto;
   height: auto;
-  border: 1px solid #0F0E17;
   overflow: hidden;
 }
 
 /* CAROUSEL */
 
 .hs2Text {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: #0f0e17;
   color: white;
   margin-right: 11em;
@@ -660,7 +661,7 @@ No media query for `xs` since this is the default */
 
   }
 
-  .homeSection2Description {
+  .homeSection2AboutMe {
     padding-bottom: 3em;
     /* padding-left: 11em; */
     /* overflow-y: scroll; */
@@ -743,7 +744,7 @@ No media query for `xs` since this is the default */
     display: block;
   }
 
-  .homeSection2Description {
+  .homeSection2AboutMe {
     padding-bottom: 3em;
     /* padding-left: 11em; */
     /* overflow-y: scroll; */
@@ -768,7 +769,6 @@ No media query for `xs` since this is the default */
   .details {
     max-width: 100%;
     height: auto;
-    border: 1px solid #0F0E17;
   }
 
   .ps1Flex {
@@ -819,7 +819,7 @@ No media query for `xs` since this is the default */
     display: block;
   }
 
-  .homeSection2Description {
+  .homeSection2AboutMe {
     padding-bottom: 3em;
     /* padding-left: 11em; */
     /* overflow-y: scroll; */
@@ -848,7 +848,6 @@ No media query for `xs` since this is the default */
   .details {
     max-width: 100%;
     height: auto;
-    border: 1px solid #0F0E17;
   }
 
   .homeSection2 {
@@ -915,7 +914,7 @@ No media query for `xs` since this is the default */
     min-width: 600px;
   }
 
-  .homeSection2Description {
+  .homeSection2AboutMe {
     min-width: 500px;
   }
 
