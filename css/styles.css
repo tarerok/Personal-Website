@@ -208,13 +208,25 @@ p {
   height: 515px;
 } */
 .homeSection2AboutMe {
-  padding-bottom: 3em;
-  /* border: 2px solid red; */
+  padding: 0;
+  border: 2px solid green;
   max-width: 750px;
   min-width: 400px;
   height: 515px;
   box-sizing: border-box;
   order: -1;
+}
+
+.aboutMeTextSection {
+  /* border: 1px solid blue; */
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+.aboutMeText{
+  color: black;
+  font-size: 17px;
+  text-align:left;
+  
 }
 
 .hs2Scroll {
@@ -226,18 +238,18 @@ p {
   padding: 3em 7em;
 }
 
-.homeSection2AboutMe h1 {
+#aboutMeHeader {
   display: inline-block;
   border-bottom: 2px solid #7f5af0;
   margin: 0 auto;
-  padding-top: 1em;
+  padding-top: 0.3em;
   font-size: 50px;
   color: #0F0E17;
   font-weight: 500;
   padding-bottom: 10px;
   margin-right: 3.5em;
   margin-left: 3em;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 
 /* CAROUSEL */
