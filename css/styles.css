@@ -209,7 +209,7 @@ p {
 } */
 .homeSection2AboutMe {
   padding: 0;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   max-width: 750px;
   min-width: 400px;
   height: 515px;
