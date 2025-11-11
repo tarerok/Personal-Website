@@ -1,6 +1,10 @@
 /* natural box model */
-html {
+html, body {
   box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #16161a;
 }
 
 *,
@@ -160,10 +164,6 @@ p {
 
 }
 
-.body {
-  margin: 0;
-  padding: 0;
-}
 
 .homeSection1 {
   width: 100vw, 100%;
