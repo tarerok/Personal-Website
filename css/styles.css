@@ -101,10 +101,13 @@ p {
 
 .homeImage {
   /* border: 2px solid green; */
-  width: 700px;
-  height: 500px;
-  margin-left: 8em;
-  margin-right: 2em;
+  flex: 1 1 auto;
+  max-width: 700px;
+  height: auto;
+  /* margin-left: 8em;
+  margin-right: 2em; */
+  position: relative;
+  top: -110px;
 
 }
 
