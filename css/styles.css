@@ -169,7 +169,7 @@ p {
 
 
 .homeSection1 {
-  width: 100vw, 100%;
+  width: 100%;
   height: 710px;
   /* border: 2px solid green; */
   margin-bottom: 2em;
@@ -197,9 +197,24 @@ p {
 
 
 .homeSection2 {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   background-color: #fffffe;
   text-align: center;
-  height: auto;
+ 
+}
+
+.homeSection2Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
 }
 
 
@@ -210,20 +225,30 @@ p {
   min-width: 400px;
   height: 515px;
 } */
-.homeSection2AboutMe {
+/* .homeSection2AboutMe {
+  flex: 1;
   padding: 0;
-  /* border: 2px solid green; */
+   border: 2px solid green; 
   max-width: 750px;
   min-width: 400px;
-  height: 515px;
+  height: 100%;
   box-sizing: border-box;
+  order: -1;
+} */
+
+.homeSection2AboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   order: -1;
 }
 
 .aboutMeTextSection {
   /* border: 1px solid blue; */
+  height: 100%;
   margin-bottom: 0;
   padding: 0 20px;
+  line-height: 1.5; /* improves readability */
 }
 .aboutMeText{
   color: black;
@@ -256,21 +281,6 @@ p {
 }
 
 /* CAROUSEL */
-/* .slideshow,
-.details {
-    max-width: 800px;
-    height: auto;
-    border: 1px solid #0F0E17;
-} */
-.slideshow {
-  flex: 1;
-  /* min-width: 500px; */
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-/* CAROUSEL */
 
 .hs2Text {
   /* border: 2px solid black; */
@@ -284,11 +294,43 @@ p {
   margin-bottom: 3em;
 }
 
-.homeSection2Flex {
+
+/* CAROUSEL */
+/* .slideshow,
+.details {
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #0F0E17;
+} */
+/* .slideshow {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  min-height: 500px;
+  flex-direction: column;
+  
+} */
+/* .slideshow, .carousel-inner,
+.carousel-item, .carousel-inner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.slideshow {
+  flex: 1;
+  height: 100%;
+  border: 2px solid red;
+  
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%; /* all inherit the full height */
+}
+
+.carousel-item img{
+    height: 100%; /* Ensures image fills the item's height */
+    object-fit: cover;
 }
 
 
@@ -298,7 +340,7 @@ p {
 .projectSection1 {
   background-color: #16161a;
   padding-top: 10em;
-  width: 100vw, 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -398,7 +440,7 @@ footer {
 .resumeSection1 {
   background-color: #16161a;
   padding-top: 3em;
-  width: 100vw, 100%;
+  width: 100%;
   height: 900px;
 }
 
@@ -471,7 +513,7 @@ footer {
 .contactSection1 {
   background-color: #16161a;
   padding-top: 3em;
-  width: 100vw, 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -614,7 +656,7 @@ footer {
 .project1Section1 {
   background-color: #16161a;
   padding-top: 3em;
-  width: 100vw, 100%;
+  width: 100%;
   height: 100vw;
 }
 
@@ -759,17 +801,17 @@ No media query for `xs` since this is the default */
   }
 
   .homeSection2Flex {
-    display: block;
+    flex-direction: column;
   }
 
   .homeSection2AboutMe {
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
     /* padding-left: 11em; */
     /* overflow-y: scroll; */
     /* max-width: 750px; */
     max-width: 100%;
     /* height: 515px; */
-    height: 515px;
+    /* height: 515px; */
 
   }
 
@@ -786,7 +828,7 @@ No media query for `xs` since this is the default */
   .slideshow,
   .details {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
   }
 
   .ps1Flex {
@@ -826,7 +868,7 @@ No media query for `xs` since this is the default */
     margin-right: 2em;
     margin-top: 2em;
     display: block; */
-    display: none;
+    /* display: none; */
 
   }
 
@@ -834,9 +876,6 @@ No media query for `xs` since this is the default */
     display: flex;
   }
 
-  .homeSection2Flex {
-    display: block;
-  }
 
   .homeSection2AboutMe {
     padding-bottom: 3em;
@@ -866,7 +905,7 @@ No media query for `xs` since this is the default */
   .slideshow,
   .details {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
   }
 
   .homeSection2 {
@@ -914,14 +953,12 @@ No media query for `xs` since this is the default */
   }
 
 /* This homeImage selector is for Laptop Screen */
-  .homeImage {
-    /* width: 700px;
-    height: 500px; */
+  /* .homeImage {
     width: 500px;
     height: auto;
     margin: 0;
     display: block;
-  }
+  } */
 
   .homeFlex1 {
     display: flex;
@@ -930,6 +967,11 @@ No media query for `xs` since this is the default */
   .homeSection2Flex {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .slideshow {
@@ -962,6 +1004,9 @@ No media query for `xs` since this is the default */
     height: auto;
   }
 }
+
+
+
 
 
 /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
