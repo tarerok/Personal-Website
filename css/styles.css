@@ -98,22 +98,46 @@ p {
   font-style: normal;
 }
 
+/* HOME SECTION 1 */
+.homeSection1 {
+  width: 100%;
+  border: 5px solid yellow;
+  /* margin-bottom: 2em; */
+  padding-top: 1em;
+}
 
+.homeFlex1 {
+  /* border: 6px solid purple; */
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+
+}
+
+
+.homeImageSection {
+  border: 3px solid blue;
+}
 .homeImage {
-  /* border: 2px solid green; */
-  flex: 1 1 auto;
-  max-width: 700px;
-  height: auto;
+  border: 2px solid green;
+  /* flex: 1 1 auto; */
+  /* max-width: 500px; */
+  width: auto;
+  /* height: 100%; */
+  max-height: 100vh;
+  object-fit: cover;
   /* margin-left: 8em;
   margin-right: 2em; */
-  position: relative;
-  top: -110px;
+  /* position: relative;
+  top: -100px; */
+
 
 }
 
 .homeDescription {
-  /* border: 2px solid blue; */
+  border: 2px solid lightblue;
   padding-left: 3em;
+  padding-right: 0;
 }
 
 .homeDescription h1 {
@@ -122,7 +146,7 @@ p {
   color: #fffffe;
   font-size: 60px;
   font-weight: 700;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 30px;
 }
 
@@ -135,6 +159,26 @@ p {
   font-style: normal;
   color: white;
   font-size: 25px;
+}
+
+.homeLast {
+  /* border: 3px solid pink; */
+  text-align: center;
+  /* margin-bottom: 3em; */
+  padding-top: 5em;
+}
+
+.arrow {
+  border: solid #fffffe;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /* SLIDE IN ANIMATION */
@@ -159,44 +203,10 @@ p {
 
 /* SLIDE IN ANIMATION */
 
-.homeFlex1 {
-  /* border: 2px solid purple; */
-  display: flex;
-  justify-content: center;
-  margin-top: 5em;
-
-}
 
 
-.homeSection1 {
-  width: 100%;
-  height: 710px;
-  /* border: 2px solid green; */
-  margin-bottom: 2em;
-  padding-top: 1em;
-}
 
-.homeLast {
-  text-align: center;
-  /* margin-bottom: 3em; */
-  padding-top: 5em;
-}
-
-.arrow {
-  border: solid #fffffe;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 7px;
-
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-
-.homeSection2 {
+/* .homeSection2 {
   height: 500px;
   display: flex;
   justify-content: center;
@@ -204,7 +214,7 @@ p {
   background-color: #fffffe;
   text-align: center;
  
-}
+} */
 
 .homeSection2Flex {
   display: flex;
@@ -308,12 +318,12 @@ p {
   flex-direction: column;
   
 } */
-/* .slideshow, .carousel-inner,
+ .slideshow, .carousel-inner,
 .carousel-item, .carousel-inner img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+} 
 
 .slideshow {
   flex: 1;
@@ -690,7 +700,8 @@ No media query for `xs` since this is the default */
   z-index: 1100;
 }
 
-/* Small devices (landscape phones, 576px and up) -------------------------------------------------------------*/
+/* Small devices (landscape phones, 576px and up) ---------------*/
+/*
 @media (min-width: 576px) {
   .rectangle {
     background-color: blue;
@@ -699,11 +710,6 @@ No media query for `xs` since this is the default */
   }
 
   .homeImage {
-    /* width: 400px;
-    height: 300px;
-    margin-left: 4em;
-    margin-right: 2em;
-    margin-top: 2em; */
     display: none;
   }
 
@@ -715,16 +721,12 @@ No media query for `xs` since this is the default */
 
   .homeSection2Flex {
     display: block;
-    /* justify-content: space-between; -------------------------------------------------------------*/
 
   }
 
   .homeSection2AboutMe {
     padding-bottom: 3em;
-    /* padding-left: 11em; */
-    /* overflow-y: scroll; */
     max-width: 750px;
-    /* height: 515px; */
     height: 355px;
 
   }
@@ -733,7 +735,6 @@ No media query for `xs` since this is the default */
     overflow-y: scroll;
     scrollbar-width: none;
     max-width: 750px;
-    /* height: 410px; */
     height: 250px;
     padding: 3em 7em;
   }
@@ -755,7 +756,6 @@ No media query for `xs` since this is the default */
   }
 
   .resumeFlex {
-    /* border: 1px solid purple; */
     flex-direction: column;
     align-items: center;
     padding-top: 4em;
@@ -774,9 +774,10 @@ No media query for `xs` since this is the default */
     padding-left: 1em;
   }
 
-}
+}*/
 
 /* Medium devices (tablets, 768px and up) -------------------------------------------------------------*/
+/*
 @media (min-width: 768px) {
   .rectangle {
     background-color: green;
@@ -785,13 +786,6 @@ No media query for `xs` since this is the default */
   }
 
   .homeImage {
-    /* width: 400px; */
-    /* height: 300px; */
-    /* width: 200px;
-    height: auto;
-    margin-left: 4em;
-    margin-right: 3em;
-    margin-top: 4em; */
     display: none;
 
   }
@@ -805,22 +799,13 @@ No media query for `xs` since this is the default */
   }
 
   .homeSection2AboutMe {
-    /* padding-bottom: 3em; */
-    /* padding-left: 11em; */
-    /* overflow-y: scroll; */
-    /* max-width: 750px; */
     max-width: 100%;
-    /* height: 515px; */
-    /* height: 515px; */
-
   }
 
   .hs2Scroll {
     overflow-y: scroll;
     scrollbar-width: none;
-    /* max-width: 750px; */
     max-width: 100%;
-    /* height: 410px; */
     height: 410px;
     padding: 3em 7em;
   }
@@ -828,7 +813,6 @@ No media query for `xs` since this is the default */
   .slideshow,
   .details {
     max-width: 100%;
-    /* height: auto; */
   }
 
   .ps1Flex {
@@ -849,11 +833,12 @@ No media query for `xs` since this is the default */
   .contactStatement {
     padding-left: 0;
   }
-}
+}*/
 
 
 
 /* Large devices (desktops, 992px and up) -------------------------------------------------------------*/
+/*
 @media (min-width: 992px) {
   .rectangle {
     background-color: orange;
@@ -862,14 +847,6 @@ No media query for `xs` since this is the default */
   }
 
   .homeImage {
-    /* width: 300px;
-    height: auto;
-    margin-left: 6em;
-    margin-right: 2em;
-    margin-top: 2em;
-    display: block; */
-    /* display: none; */
-
   }
 
   .homeFlex1 {
@@ -879,11 +856,7 @@ No media query for `xs` since this is the default */
 
   .homeSection2AboutMe {
     padding-bottom: 3em;
-    /* padding-left: 11em; */
-    /* overflow-y: scroll; */
-    /* max-width: 750px; */
     max-width: 100%;
-    /* height: 515px; */
     height: 515px;
 
   }
@@ -891,9 +864,7 @@ No media query for `xs` since this is the default */
   .hs2Scroll {
     overflow-y: scroll;
     scrollbar-width: none;
-    /* max-width: 750px; */
     max-width: 100%;
-    /* height: 410px; */
     height: 410px;
     padding: 3em 7em;
   }
@@ -905,13 +876,11 @@ No media query for `xs` since this is the default */
   .slideshow,
   .details {
     max-width: 100%;
-    /* height: auto; */
   }
 
   .homeSection2 {
     background-color: #fffffe;
     text-align: center;
-    /* height: 460px; */
   }
 
   .ps1Flex {
@@ -942,10 +911,10 @@ No media query for `xs` since this is the default */
     width: 300px;
     height: auto;
   }
-}
+}*/
 
 /* Extra large devices (large desktops, 1200px and up) -------------------------------------------------------------*/
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .rectangle {
     background-color: purple;
     width: 60px;
@@ -953,12 +922,12 @@ No media query for `xs` since this is the default */
   }
 
 /* This homeImage selector is for Laptop Screen */
-  /* .homeImage {
+  /*.homeImage {
     width: 500px;
     height: auto;
     margin: 0;
     display: block;
-  } */
+  } 
 
   .homeFlex1 {
     display: flex;
@@ -1003,32 +972,55 @@ No media query for `xs` since this is the default */
     width: 350px;
     height: auto;
   }
-}
+}*/
 
 
 
 
 
 /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
-/* Extra small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) {
+/* Large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.98px) {
+  .rectangle {
+    background-color: purple;
+    width: 60px;
+    height: 40px;
+  }
+} 
 
-} */
+ /*Medium devices (tablets, less than 992px) */
+ @media (max-width: 991.98px) {
+  .rectangle {
+    background-color: orange;
+    width: 60px;
+    height: 40px;
+  }
+
+} 
 
 /* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
+ @media (max-width: 767.98px) {
+  .rectangle {
+    background-color: blue;
+    width: 60px;
+    height: 40px;
+  }
 
-} */
+} 
+/* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+  .rectangle {
+    background-color: red;
+    width: 60px;
+    height: 40px;
+  }
+} 
 
-/* Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) {
 
-} */
 
-/* Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
 
-} */
+
+
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
