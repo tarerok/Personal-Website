@@ -220,7 +220,6 @@ p {
 
 /* .homeSection2AboutMe {
   padding-bottom: 3em;
-  border: 2px solid red;
   max-width: 750px;
   min-width: 400px;
   height: 515px;
@@ -680,7 +679,7 @@ footer {
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
-.rectangle {
+/* .rectangle {
   position: fixed;
   top: 10px;
   left: 10px;
@@ -688,15 +687,15 @@ No media query for `xs` since this is the default */
   height: 30px;
   background-color: red;
   z-index: 1100;
-}
+} */
 
 /* Small devices (landscape phones, 576px and up) -------------------------------------------------------------*/
 @media (min-width: 576px) {
-  .rectangle {
+  /* .rectangle {
     background-color: blue;
     width: 60px;
     height: 40px;
-  }
+  } */
 
   .homeImage {
     /* width: 400px;
@@ -778,11 +777,11 @@ No media query for `xs` since this is the default */
 
 /* Medium devices (tablets, 768px and up) -------------------------------------------------------------*/
 @media (min-width: 768px) {
-  .rectangle {
+  /* .rectangle {
     background-color: green;
     width: 60px;
     height: 40px;
-  }
+  } */
 
   .homeImage {
     /* width: 400px; */
@@ -855,11 +854,11 @@ No media query for `xs` since this is the default */
 
 /* Large devices (desktops, 992px and up) -------------------------------------------------------------*/
 @media (min-width: 992px) {
-  .rectangle {
+  /* .rectangle {
     background-color: orange;
     width: 60px;
     height: 40px;
-  }
+  } */
 
   .homeImage {
     /* width: 300px;
@@ -946,11 +945,11 @@ No media query for `xs` since this is the default */
 
 /* Extra large devices (large desktops, 1200px and up) -------------------------------------------------------------*/
 @media (min-width: 1200px) {
-  .rectangle {
+  /* .rectangle {
     background-color: purple;
     width: 60px;
     height: 40px;
-  }
+  } */
 
 /* This homeImage selector is for Laptop Screen */
   /* .homeImage {
