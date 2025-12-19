@@ -367,6 +367,11 @@ p {
   height: 300px;
 }
 
+.projectImage5 {
+  width: 100%;
+  height: auto;
+}
+
 /* .ps1Flex {
   display: flex;
   justify-content: space-between;
