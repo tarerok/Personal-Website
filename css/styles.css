@@ -2,7 +2,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -37,7 +40,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #16161a;
-  
+
   position: fixed;
   text-align: center;
   top: 0;
@@ -75,13 +78,15 @@ li a:hover {
 
 
 
-h1, h3{
+h1,
+h3 {
   font-family: "Parkinsans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: medium;
 }
-p{
+
+p {
   line-height: 1.5;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -102,6 +107,7 @@ p{
   /* border: 2px solid blue; */
   padding-left: 3em;
 }
+
 .homeDescription h1 {
   border-left: 9px solid #7f5af0;
   padding-left: 7px;
@@ -111,6 +117,7 @@ p{
   margin-top: 1em;
   margin-bottom: 30px;
 }
+
 .homeDescription p {
   max-width: 50ch;
   line-height: 1.5;
@@ -127,22 +134,24 @@ p{
 /* Asked CHATGPT how to use Keyframes. Query is in seperate document */
 @keyframes leftSlide {
   from {
-      opacity: 0;
-      transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-100%);
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 .leftSlide {
-  opacity: 0; 
-  animation: leftSlide 1.5s ease-out forwards; 
+  opacity: 0;
+  animation: leftSlide 1.5s ease-out forwards;
 }
+
 /* SLIDE IN ANIMATION */
 
-.homeFlex1{
+.homeFlex1 {
   /* border: 2px solid purple; */
   display: flex;
   justify-content: center;
@@ -154,6 +163,7 @@ p{
   margin: 0;
   padding: 0;
 }
+
 .homeSection1 {
   width: 100vw, 100%;
   height: 710px;
@@ -167,12 +177,13 @@ p{
   /* margin-bottom: 3em; */
   padding-top: 5em;
 }
+
 .arrow {
   border: solid #fffffe;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 7px;
-  
+
 }
 
 .down {
@@ -222,7 +233,7 @@ p{
   color: #0F0E17;
   font-weight: 500;
   padding-bottom: 10px;
-  margin-right: 3.5em;  
+  margin-right: 3.5em;
   margin-left: 3em;
   margin-bottom: 7px;
 }
@@ -234,13 +245,14 @@ p{
     height: auto;
     border: 1px solid #0F0E17;
 } */
-.slideshow{
-    flex: 1;
-    min-width: 500px;
-    height: auto;
-    border: 1px solid #0F0E17;
-    overflow: hidden;
+.slideshow {
+  flex: 1;
+  min-width: 500px;
+  height: auto;
+  border: 1px solid #0F0E17;
+  overflow: hidden;
 }
+
 /* CAROUSEL */
 
 .hs2Text {
@@ -270,23 +282,39 @@ p{
   background-color: #16161a;
   padding-top: 10em;
   width: 100vw, 100%;
-  height: 900px;
+  height: 100%;
 }
+
 .projectSection1 h1 {
   color: #0F0E17;
 }
+
 .ps1Description p {
   color: #0F0E17;
 }
+
 .ps1Description {
   padding: 1em 3em;
 
 }
+
 .projectImage1 {
   width: 300px;
   height: 200px;
 
-} 
+}
+
+.projectImage4 {
+  width: 300px;
+  height: 300px;
+}
+.projectImage5 {
+  width: 100%;
+  height: auto;
+}
+
+
+
 /* .ps1Flex {
   display: flex;
   justify-content: space-between;
@@ -315,11 +343,13 @@ p{
 /* https://www.geeksforgeeks.org/gradient-borders/ */
 
 .ps1Flex:hover {
-  border: 5px solid; 
-  border-image-source: linear-gradient(194deg, rgba(127,90,240,1) 22%, rgba(44,182,125,1) 100%);
-  border-image-slice: 1; 
+  border: 5px solid;
+  border-image-source: linear-gradient(194deg, rgba(127, 90, 240, 1) 22%, rgba(44, 182, 125, 1) 100%);
+  border-image-slice: 1;
 }
-.ps1Flex h1, .ps1Flex p{
+
+.ps1Flex h1,
+.ps1Flex p {
   color: #fffffe;
 }
 
@@ -330,22 +360,27 @@ p{
   display: inline-block;
 
 }
+
 a.ps1Link:hover {
   transform: scale(1.1);
 }
+
 .posterLink {
   color: #2cb67d;
 
 }
+
 .posterLink:hover {
   color: #7f5af0;
 }
+
 footer {
   background-color: #0F0E17;
   color: white;
   padding: 2em 2em;
 
 }
+
 /* PROJECT PAGE------------------------------------------------------------------------------ */
 
 /* RESUME PAGE------------------------------------------------------------------------------ */
@@ -353,16 +388,19 @@ footer {
   background-color: #16161a;
   padding-top: 3em;
   width: 100vw, 100%;
-  height: auto;
+  height: 900px;
 }
-.resumeSection1 h1{
+
+.resumeSection1 h1 {
   color: #fffffe;
   font-size: 45px;
 }
+
 .resumeSection1 h3 {
   color: #fffffe;
   font-size: 30px
 }
+
 .resumeSection1 p {
   color: #fffffe;
   font-size: 20px;
@@ -383,32 +421,39 @@ footer {
   height: auto;
   border: 3px solid lightslategray;
 }
+
 .resumeFlexDescription {
   /* border: 1px solid green; */
   margin-top: 1em;
   height: fit-content;
   margin-left: 8em;
 }
+
 .resumeLink {
   color: #7f5af0;
-  
+
 }
+
 .resumeLink:hover {
   color: #2cb67d;
 }
+
 .resumeHeader {
   border-bottom: 2px groove #7f5af0;
   display: inline-block;
 }
+
 .resumeCategory {
   /* border: 1px solid blue; */
 }
-.resumeCategory p{
+
+.resumeCategory p {
   /* border: 1px solid white; */
   margin-bottom: 1em;
   padding-bottom: 2em;
   margin-top: 0;
 }
+
 /* RESUME PAGE------------------------------------------------------------------------------ */
 
 /* CONTACT PAGE------------------------------------------------------------------------------ */
@@ -418,6 +463,7 @@ footer {
   width: 100vw, 100%;
   height: auto;
 }
+
 .contactSection1 h1 {
   color: #fffffe;
   font-size: 45px;
@@ -426,47 +472,60 @@ footer {
   text-align: center;
 
 }
+
 .contactSection1 a {
   display: block;
   /* border: 1px solid green; */
   padding-top: 22px;
   padding-left: 5px;
 }
+
 .fa-linkedin {
   color: white;
   font-size: 25px;
   margin-right: 10px;
 }
+
 .fa-envelope {
   color: white;
   font-size: 25px;
   margin-right: 10px;
 
 }
+
 .fa-facebook {
   color: white;
   font-size: 25px;
   margin-right: 10px;
 
 }
+
 .fa-instagram {
   color: white;
   font-size: 25px;
   margin-right: 10px;
 }
-.fa-instagram:hover, .fa-envelope:hover, .fa-facebook:hover, .fa-linkedin:hover {
+
+.fa-instagram:hover,
+.fa-envelope:hover,
+.fa-facebook:hover,
+.fa-linkedin:hover {
   color: #7f5af0;
 }
+
 .email {
   text-decoration: none;
-  color: #fffffe;  
+  color: #fffffe;
 }
+
 .email:hover {
   color: #7f5af0
 }
+
 .iconTitle1 {
   font-size: 25px;
 }
+
 .contactInfo {
   display: flex;
   /* border: 1px solid red; */
@@ -475,31 +534,37 @@ footer {
 
 
 }
-.contactInfo1{
+
+.contactInfo1 {
   display: flex;
   color: white;
   font-size: 20px;
   align-items: center;
 }
+
 .contactInfo1 a {
   padding: 0 0 0 10px;
 
 }
+
 .contactInfo p {
   color: white;
   font-size: 20px;
   margin-right: 10px;
-  
+
 }
+
 .contactFlexRow {
   display: flex;
   justify-content: space-around;
 }
+
 .contactImage {
   width: 350px;
   height: auto;
   margin-top: 2em;
 }
+
 .contactFlexCol {
   display: flex;
   flex-direction: column;
@@ -507,12 +572,14 @@ footer {
   /* border: 1px solid yellow; */
   padding-left: 0;
 }
+
 .contactStatement {
   color: #fffffe;
   font-size: 35px;
   width: 400px;
   /* border: 1px solid yellow; */
 }
+
 .contactInfoContainer {
   /* border: 2px solid blue;  */
   display: flex;
@@ -522,6 +589,7 @@ footer {
   padding-left: 1em;
 
 }
+
 .socialMediaText {
   color: #fffffe;
   font-size: 25px;
@@ -538,15 +606,19 @@ footer {
   width: 100vw, 100%;
   height: 100vw;
 }
+
 .project1Section1 h1 {
   color: #fffffe;
   font-size: 85px;
-  border-bottom: 5px solid; /* Set border width */
-  border-image-source: linear-gradient(194deg, rgba(127,90,240,1) 22%, rgba(44,182,125,1) 100%);
-  border-image-slice: 1; /* Ensures the gradient spans the entire border */
+  border-bottom: 5px solid;
+  /* Set border width */
+  border-image-source: linear-gradient(194deg, rgba(127, 90, 240, 1) 22%, rgba(44, 182, 125, 1) 100%);
+  border-image-slice: 1;
+  /* Ensures the gradient spans the entire border */
   display: inline-block;
   margin-left: 40px;
 }
+
 /* PROJECT1 PAGE------------------------------------------------------------------------------ */
 
 
@@ -556,22 +628,23 @@ footer {
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 .rectangle {
-  position: fixed; 
+  position: fixed;
   top: 10px;
   left: 10px;
-  width: 50px; 
+  width: 50px;
   height: 30px;
   background-color: red;
   z-index: 1100;
 }
 
 /* Small devices (landscape phones, 576px and up) -------------------------------------------------------------*/
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .rectangle {
-    background-color: blue; 
-    width: 60px; 
+    background-color: blue;
+    width: 60px;
     height: 40px;
   }
+
   .homeImage {
     /* width: 400px;
     height: 300px;
@@ -580,16 +653,19 @@ No media query for `xs` since this is the default */
     margin-top: 2em; */
     display: none;
   }
-  .homeFlex1{
+
+  .homeFlex1 {
     display: block;
     justify-content: center;
     margin-top: 5em;
   }
+
   .homeSection2Flex {
     display: block;
     /* justify-content: space-between; -------------------------------------------------------------*/
-    
+
   }
+
   .homeSection2Description {
     padding-bottom: 3em;
     /* padding-left: 11em; */
@@ -599,6 +675,7 @@ No media query for `xs` since this is the default */
     height: 355px;
 
   }
+
   .hs2Scroll {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -607,32 +684,39 @@ No media query for `xs` since this is the default */
     height: 250px;
     padding: 3em 7em;
   }
+
   .ps1Flex {
     width: fit-content;
     text-align: center;
   }
-  
-  
-  .projectImage1, .projectImage2, .projectImage3 {
+
+
+  .projectImage1,
+  .projectImage2,
+  .projectImage3 {
     display: none;
   }
 
   .resumeImage {
     width: 400px;
   }
+
   .resumeFlex {
     /* border: 1px solid purple; */
     flex-direction: column;
     align-items: center;
     padding-top: 4em;
   }
+
   .resumeFlexDescription {
     margin-left: 0;
     text-align: center;
   }
+
   .contactImage {
     display: none;
   }
+
   .contactStatement {
     padding-left: 1em;
   }
@@ -642,10 +726,11 @@ No media query for `xs` since this is the default */
 /* Medium devices (tablets, 768px and up) -------------------------------------------------------------*/
 @media (min-width: 768px) {
   .rectangle {
-    background-color: green; 
-    width: 60px; 
+    background-color: green;
+    width: 60px;
     height: 40px;
   }
+
   .homeImage {
     width: 400px;
     height: 300px;
@@ -655,12 +740,15 @@ No media query for `xs` since this is the default */
     display: block;
 
   }
+
   .homeFlex1 {
     display: flex;
   }
+
   .homeSection2Flex {
     display: block;
   }
+
   .homeSection2Description {
     padding-bottom: 3em;
     /* padding-left: 11em; */
@@ -681,28 +769,32 @@ No media query for `xs` since this is the default */
     height: 410px;
     padding: 3em 7em;
   }
+
   .slideshow,
-.details {
-    max-width:100%;
+  .details {
+    max-width: 100%;
     height: auto;
     border: 1px solid #0F0E17;
-}
-.ps1Flex {
-  width: 600px;
-  text-align: left;
-}
-.resumeImage {
-  width: 500px;
-}
-.contactImage {
-  width: 300px;
-  height: auto;
-  display: block;
-}
+  }
 
-.contactStatement {
-  padding-left: 0;
-}
+  .ps1Flex {
+    width: 600px;
+    text-align: left;
+  }
+
+  .resumeImage {
+    width: 500px;
+  }
+
+  .contactImage {
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+
+  .contactStatement {
+    padding-left: 0;
+  }
 }
 
 
@@ -710,10 +802,11 @@ No media query for `xs` since this is the default */
 /* Large devices (desktops, 992px and up) -------------------------------------------------------------*/
 @media (min-width: 992px) {
   .rectangle {
-    background-color: orange; 
-    width: 60px; 
+    background-color: orange;
+    width: 60px;
     height: 40px;
   }
+
   .homeImage {
     width: 500px;
     height: 400px;
@@ -723,13 +816,15 @@ No media query for `xs` since this is the default */
     display: block;
 
   }
+
   .homeFlex1 {
     display: flex;
   }
+
   .homeSection2Flex {
     display: block;
   }
-  
+
   .homeSection2Description {
     padding-bottom: 3em;
     /* padding-left: 11em; */
@@ -740,6 +835,7 @@ No media query for `xs` since this is the default */
     height: 515px;
 
   }
+
   .hs2Scroll {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -749,90 +845,107 @@ No media query for `xs` since this is the default */
     height: 410px;
     padding: 3em 7em;
   }
+
   .hs2Text {
     width: 500px;
   }
+
   .slideshow,
-.details {
-    max-width:100%;
+  .details {
+    max-width: 100%;
     height: auto;
     border: 1px solid #0F0E17;
-}
-.homeSection2 {
-  background-color: #fffffe;
-  text-align: center;
-  /* height: 460px; */
-}
-.ps1Flex {
-  width: 800px;
-}
+  }
+
+  .homeSection2 {
+    background-color: #fffffe;
+    text-align: center;
+    /* height: 460px; */
+  }
+
+  .ps1Flex {
+    width: 800px;
+  }
 
 
-.projectImage1, .projectImage2, .projectImage3 {
-  display: block;
-}
-.resumeImage {
-  width: 400px;
-}
-.resumeFlex {
-  flex-direction: row;
-}
-.resumeFlexDescription {
-  margin-left: 4em;
-  text-align: left;
-}
-.contactImage {
-  width: 300px;
-  height: auto;
-}
+  .projectImage1,
+  .projectImage2,
+  .projectImage3 {
+    display: block;
+  }
+
+  .resumeImage {
+    width: 400px;
+  }
+
+  .resumeFlex {
+    flex-direction: row;
+  }
+
+  .resumeFlexDescription {
+    margin-left: 4em;
+    text-align: left;
+  }
+
+  .contactImage {
+    width: 300px;
+    height: auto;
+  }
 }
 
-/* Extra large devices (large desktops, 1200px and up) -------------------------------------------------------------*/ 
+/* Extra large devices (large desktops, 1200px and up) -------------------------------------------------------------*/
 @media (min-width: 1200px) {
   .rectangle {
-    background-color: purple; 
-    width: 60px; 
+    background-color: purple;
+    width: 60px;
     height: 40px;
   }
+
   .homeImage {
     width: 700px;
     height: 500px;
     margin: 0;
     display: block;
   }
+
   .homeFlex1 {
     display: flex;
   }
+
   .homeSection2Flex {
     display: flex;
     justify-content: space-between;
   }
 
-.slideshow {
-  min-width: 600px;
-}
-.homeSection2Description {
-  min-width: 500px;
-}
+  .slideshow {
+    min-width: 600px;
+  }
 
-.hs2Scroll {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  max-width: 750px;
-  height: 410px;
-  padding: 3em 7em;
-}
-.resumeImage {
-  width: 600px;
-}
-.resumeFlexDescription {
-  margin-left: 8em;
-  text-align: left;
-}
-.contactImage {
-  width: 350px;
-  height: auto;
-}
+  .homeSection2Description {
+    min-width: 500px;
+  }
+
+  .hs2Scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-width: 750px;
+    height: 410px;
+    padding: 3em 7em;
+  }
+
+  .resumeImage {
+    width: 600px;
+  }
+
+  .resumeFlexDescription {
+    margin-left: 8em;
+    text-align: left;
+  }
+
+  .contactImage {
+    width: 350px;
+    height: auto;
+  }
 }
 
 
